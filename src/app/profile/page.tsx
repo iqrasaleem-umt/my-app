@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import UserTabs from "../components/usertabs";
 
 function ProfilePage() {
   // State for form fields
@@ -13,7 +14,12 @@ function ProfilePage() {
   const [country, setCountry] = useState("");
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <section> 
+      <div className="mt-8   text-gray-500 rounded-lg">
+      <UserTabs />
+      </div>
+    <div className="flex items-center justify-center min-h-screen mt-8">
+      
       <div className="bg-white p-8 rounded-lg w-full max-w-md shadow-lg">
         <div className="flex flex-col items-center mb-6">
           {/* Profile Image */}
@@ -97,6 +103,7 @@ function ProfilePage() {
         </form>
       </div>
     </div>
+    </section>
   );
 }
 
