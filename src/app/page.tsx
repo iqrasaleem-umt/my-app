@@ -1,5 +1,5 @@
 
-import Header from "./components/header" 
+
 import SectionHeaders from "./components/sectionheader"
 import Hero from "./views/hero"
 import Menu from "./views/menu"
@@ -7,7 +7,7 @@ import Menu from "./views/menu"
 export default function Home() {
   return (
    <>
-    <Header/>
+    
     <Hero/>
     <Menu/> 
     <section className="text-center my-16">
@@ -23,13 +23,14 @@ export default function Home() {
    </section>
    <section className="text-center my-8">
    <SectionHeaders
-   subHeader={'Do not hesitate'}
+   subHeader={"Don't hesitate"}
    mainHeader={'Contact us'}/>
    <div className="mt-4">
    <a className="text-2xl underline text-gray-500"  href="tel:+92:030012345">+92 0300 12345</a>
    </div>
    
    </section>
+   
    </>
   )
 }
