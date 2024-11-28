@@ -38,9 +38,7 @@ export default function Home() {
 
       {/* Add to Cart Button Section */}
       <section className="text-center my-8 px-4 md:px-8 lg:px-16">
-        <button className="hidden sm:block bg-blue-500 text-white py-2 px-4 rounded-lg border-4 border-red-500">
-          Add to Cart
-        </button>
+        
       </section>
     </>
   );
