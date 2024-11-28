@@ -7,9 +7,11 @@ function Header() {
     <nav className="flex gap-8 text-gray-500 font-semibold items-center">
     <Link className="text-primary font-semibold text-2xl" href="/">Delicious Pizza</Link>
       <Link href={'/'}>Home</Link>
-      <Link href={''}>Menu</Link>
-      <Link href={''}>About</Link>
-      <Link href={''}>contact</Link>
+      <Link href={'/wholemenu'}>Whole menu</Link>
+      
+      
+      
+     
       </nav>
       <nav className='flex text-center text-gray-500 gap-4 font-semibold'>
         <Link className='mt-2' href={"/login"}>Login</Link>

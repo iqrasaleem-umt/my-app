@@ -1,15 +1,22 @@
 
 
+
 import SectionHeaders from "./components/sectionheader"
+
 import Hero from "./views/hero"
-import Menu from "./views/menu"
+import HomeItems from "./views/homeitems"
+import MenuList from "./views/menulist"
+
+
 
 export default function Home() {
   return (
    <>
     
     <Hero/>
-    <Menu/> 
+   <HomeItems/>
+   <MenuList/>
+    
     <section className="text-center my-16">
    <SectionHeaders
    subHeader={'Our story '}
