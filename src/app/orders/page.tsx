@@ -74,22 +74,20 @@ export default function OrdersPage() {
         {orders.map((order) => (
           <div
             key={order.id}
-            className={`bg-gray-100 rounded-lg p-4 flex items-center justify-between ${
+            className={`bg-gray-100 rounded-lg p-4 flex items-center justify-between gap-4 ${
               order.important ? 'border-2 border-yellow-500' : ''
             }`}
           >
             {/* Order Info */}
-            <div className="flex items-center gap-4">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 w-full">
               {/* Customer Name */}
               <div className="text-gray-900 font-medium">{order.customer}</div>
               {/* Customer Email */}
               <div className="text-gray-600">{order.email}</div>
             </div>
             {/* Order Details */}
-            <div className="text-gray-600">
-              {/* Date First */}
+            <div className="text-gray-600 w-full text-sm sm:text-base">
               <div>Date: {order.date}</div>
-              {/* Total After Date */}
               <div>Total: {order.total}</div>
             </div>
             {/* Actions */}

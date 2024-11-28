@@ -1,24 +1,25 @@
-import React from 'react'
-import MenuCard from '../components/menucard'
-import { Products } from '../utils/mock'
+import React from 'react';
+import MenuCard from '../components/menucard';
+import { Products } from '../utils/mock';
 
-
-function wholeMenu() {
+function WholeMenu() {
   return (
     <div>
-         <div className='flex items-center justify-evenly mt-14  flex-wrap p-4"'> 
-      {Products.map((product) => (
-        <MenuCard 
-              key={product.id}
-              name={product.name}
-              price={product.price}
-              image={product.image} // Assuming `product.image` contains a string path or StaticImageData
-              id={product.id} 
-              description={product.description}        />
-      ))}
-    </div>
+      {/* Flex container with wrap for responsive grid */}
+      <div className='flex items-center justify-evenly mt-14 flex-wrap p-4'>
+        {Products.map((product) => (
+          <MenuCard
+            key={product.id}
+            name={product.name}
+            price={product.price}
+            image={product.image} // Assuming `product.image` contains a string path or StaticImageData
+            id={product.id}
+            description={product.description}
+          />
+        ))}
+      </div>
     </div>
   );
 }
 
-export default wholeMenu
+export default WholeMenu;

@@ -35,21 +35,20 @@ export default function UsersPage() {
   };
 
   return (
-    <section className="max-w-2xl mx-auto mt-8">
-      <div className="mt-8">
+    <section className="max-w-2xl mx-auto mt-8 px-4">
+      <div className="mt-8 space-y-4">
         {users.map((user) => (
           <div
             key={user.id}
-            className="bg-gray-100 rounded-lg mb-2 p-4 flex items-center gap-4"
+            className="bg-gray-100 rounded-lg p-4 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6"
           >
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 grow">
-              {/* User Name */}
+            {/* User Info */}
+            <div className="flex-1">
               <div className="text-gray-900 font-medium">{user.name}</div>
-              {/* User Email */}
               <div className="text-gray-600">{user.email}</div>
             </div>
             {/* Actions */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 mt-4 sm:mt-0">
               {/* Edit Button */}
               <button
                 className="text-blue-500 hover:text-blue-700"
