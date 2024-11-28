@@ -1,46 +1,3 @@
-// import React from 'react';
-// import Image, { StaticImageData } from 'next/image';
-// // Defining the interface for the component props
-// interface MenuCardProps {
-//   name: string;
-//   price: number; 
-//   image: StaticImageData;
-//   description: string;
-//   id: number;
-// }
-
-// // Correcting the component definition and typing
-// const MenuCard: React.FC<MenuCardProps> = ({ name, price, image, description }) => {
-//   return (
-//     <div >
-//       {/* Centered Image */}
-//       <div className=''>
-//         <Image
-//           src={image}  // Using the image prop here
-//           alt={name}   // Using the name as alt text for better accessibility
-//           width={220}
-//           height={140}
-//           className="rounded-t-lg"
-//         />
-//       </div>
-
-//       {/* Title */}
-//       <h1 className="text-center text-md font-semibold mt-3">{name}</h1>
-
-//       {/* Description */}
-//       <p className="text-gray-600 text-sm text-center mt-2">{description}</p>
-
-//       {/* Button */}
-//       <button className="w-full px-4 py-2 mt-3 rounded-lg bg-primary text-white font-medium hover:bg-primary-dark transition-colors">
-//         Add to Cart ${price}
-//       </button>
-//     </div>
-//   );
-// };
-
-// export default MenuCard;
-
-// Add this line at the top of the file
 "use client";
 
 import React, { useState } from 'react';
@@ -55,7 +12,6 @@ interface MenuCardProps {
   id: number;
 }
 
-// Correcting the component definition and typing
 const MenuCard: React.FC<MenuCardProps> = ({ name, price, image, description }) => {
   const [message, setMessage] = useState<string | null>(null); // State to track the message
 
@@ -65,9 +21,9 @@ const MenuCard: React.FC<MenuCardProps> = ({ name, price, image, description }) 
   };
 
   return (
-    <div className="w-[280px] h-[360px] border p-4 rounded-lg shadow-sm flex flex-col justify-between">
+    <div className="w-full sm:w-[280px] md:w-[300px] lg:w-[320px] p-4 rounded-lg shadow-sm flex flex-col justify-between bg-white">
       {/* Image */}
-      <div className="flex justify-center items-center w-full h-[140px] bg-gray-100 rounded-t-lg overflow-hidden">
+      <div className="flex justify-center items-center w-full h-[180px] sm:h-[200px] bg-gray-100 rounded-t-lg overflow-hidden">
         <Image
           src={image}
           alt={name}
