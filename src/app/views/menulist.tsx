@@ -6,7 +6,7 @@ function MenuList() {
   const productChunks = Products.slice(0, 4); // Correct slicing for 4 products
 
   return (
-    <div className='flex items-center justify-evenly mt-14  gap-2  p-4 rounded-lg shadow-sm"'> 
+    <div className='flex items-center justify-evenly mt-14  gap-2  p-4 rounded-lg shadow-sm ="'> 
       {productChunks.map((product) => (
         <MenuCard 
               key={product.id}

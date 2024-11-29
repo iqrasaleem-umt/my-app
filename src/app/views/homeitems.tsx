@@ -7,7 +7,7 @@ export default function HomeItems() {
   // Hardcoded best sellers data to avoid fetching from the backend
  
   return (
-    <section className="relative mt-12">
+    <section className=" mt-12">
       
 
       <div className="text-center mb-4">
