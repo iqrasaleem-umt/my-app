@@ -5,7 +5,7 @@ import MenuList from "./views/menulist";
 
 export default function Home() {
   return (
-    <div className="max-w-6xl mx-auto p-4">
+    <div className="max-w-6xl mx-auto p-4 -inset-40 ">
       {/* Hero Section */}
       <Hero />
 
