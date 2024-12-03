@@ -18,7 +18,7 @@ export const Products: Product[]=[
     id: 1,
     name: "Chicken Pizza",
     category: "pizza",
-    description:"A savory delight loaded with tender chicken chunks and a blend of flavorful sauces",
+    description:"A savory delight loaded with tender chicken chunks and a blend of flavorful sauces and have delicious task",
     price: 12,
      image: pic1,
   },
